@@ -1,1 +1,38 @@
-<div>123</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的第一个网站</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+            width: 100vw;
+            height: 100vh;
+            display: table-cell;
+            vertical-align:middle;
+            text-align: center;
+        }
+        h1{
+            display: inline-block;
+        }
+		span{
+			font-size: 50px;
+			margin:0 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="h1">欢迎来到<span id="ypl">杨培塄</span>的个人网站</h1>
+	<script>
+		function rand(m,n){
+			return Math.floor(Math.random()*(n-m+1)+m);
+		}
+		setInterval(function(){
+			ypl.style.color = 'rgb('+rand(0,255)+','+rand(0,255)+','+rand(0,255)+')';
+		},1000);
+	</script>
+</body>
+</html>
